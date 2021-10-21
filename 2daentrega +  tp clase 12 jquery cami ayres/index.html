@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+   
+    <br>
+
+   
+
+
+
+  
+<h1>  Bienvenido a librería Arcal  </h1>
+
+<h2>Ingrese sus datos para una compra más personalizada: </h2>
+
+
+<form name="registro" id="formulario">
+    <table border="1">
+    <tr>
+        <td>Nombre:</td><td><input type="text" name="nombre" id="nombre" ></td>
+    </tr>	
+    <tr>
+        <td>Edad:</td><td><input type="text" name="edad" id="edad" ></td>
+    </tr>
+    <tr>
+        <td colspan "2"><input type="submit" name="btn1" value="Enviar" onclick="obtenerdatos()"></td>
+    </tr>
+    </table><br/><br/><br/>
+    
+    
+    
+    <table border="1">
+    <tr>
+        <td>Nombre:</td><td><input type="text" name="nombreobtenido" id="nombreobtenido" ></td>
+    </tr>	
+    <tr>
+        <td>Edad:</td><td><input type="text" name="edadobtenida" id="edadobtenida" ></td>
+    </tr>
+    </table>
+</form>
+    </center>
+    
+    <br>
+    <br>
+
+    <br>
+
+ <!-- Carrito de compras-->
+ <div class="container">
+     <h2> Compre sus próximas lecturas</h2>
+    <div class="row">
+        <!-- Elementos generados a partir del JSON -->
+        <main id="items" class="col-sm-8 row"></main>
+        <!-- Carrito -->
+        <aside class="col-sm-4">
+            <h2>Carrito</h2>
+            <!-- Elementos del carrito -->
+            <ul id="carrito" class="list-group"></ul>
+            <hr>
+            <!-- Precio total -->
+            <p class="text-right">Total: $<span id="total"></span>;</p>
+            <button id="boton-vaciar" class="btn btn-danger">Vaciar</button>
+        </aside>
+    </div>
+</div>
+
+<br>
+<!--    entrega JQUERY  checkbox de envío de novedades   -->
+<div id="gusta">
+<br>
+
+<span>Si</span><input type="checkbox"> 
+
+
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="./main.js">   </script>
+</body>
+</html>
