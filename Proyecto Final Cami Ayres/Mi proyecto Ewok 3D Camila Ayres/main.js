@@ -4,105 +4,105 @@ const figuras = [
     
     { id:1, 
       nombre: "Baby Yoda doble espada 15cm", 
-      imagen: '<img src=".."></img> ',
+      imagen: '../multimedia/ewok6.jpeg',
       precio: 1100},
     { id:2, 
       nombre: "Skeletor 25cm", 
-      imagen:"", 
+      imagen:'../multimedia/ewok4.jpeg', 
       precio: 2000},
     { id:3, 
       nombre: "Dark Vader 25cm",
-     imagen: "", 
+     imagen: '../multimedia/ewok37.jpeg', 
       precio: 2000}, 
 
     { id:4, 
       nombre: "Mini macetas ´Robert Plant´",
-      imagen:"",
+      imagen:'../multimedia/ewok1.jpeg',
       precio: 700},
     
     { id:5,
       nombre: "Dr Strange Porta Espirales 25cm",
-      imagen: "",
+      imagen: '../multimedia/ewok3.jpeg',
       precio: 2500},
 
     { id:6  ,
       nombre: "Mant at Arms Jumbo 30cm",
-      imagen: "",
+      imagen: '../multimedia/ewok7.jpeg',
       precio: 3000},  
 
     { id:7,
       nombre: "Han Solo Carbonita Lego",
-      imagen: "",
+      imagen: '../multimedia/ewok18.jpeg',
       precio: 650},  
 
     { id:8,
     nombre: "Yellow Submarine - John Lennon 12cm",
-    imagen: "",
+    imagen: '../multimedia/ewok21.jpeg',
     precio: 1200},  
 
     { id:9,
       nombre: "Yellow Submarine - Ringo Starr 12cm",
-      imagen: "",
+      imagen: '../multimedia/ewok22.jpeg',
       precio: 1200}, 
     
     { id:10,
       nombre: "Yellow Submarine - George Harrison 12cm",
-      imagen: "",
+      imagen: '../multimedia/ewok23.jpeg',
       precio: 1200}, 
 
     { id:11,
       nombre: "Yellow Submarine - Paul McCartney 12cm",
-      imagen: "",
+      imagen: '../multimedia/ewok24.jpeg',
       precio: 1200}, 
 
     { id:12,
       nombre: "Lampara Minas Tirith Lord of the Rings 50cm",
-      imagen: "",
+      imagen: '../multimedia/ewok25.jpeg',
       precio: 3200}, 
 
     { id:13,
       nombre: "Soporte para joystick ´the mandalorian´",
-      imagen: "",
+      imagen: '../multimedia/ewok27.jpeg',
       precio: 950}, 
 
     { id:14,
       nombre: "Figura ´Robert musical´",
-      imagen: "",
+      imagen: '../multimedia/ewok14.jpeg',
       precio: 600}, 
 
     { id:15,
       nombre: "Llaveros varios modelos",
-      imagen: "",
+      imagen: '../multimedia/ewok33.jpeg',
       precio: 500}, 
 
     { id:16,
       nombre: "Figura ´Robert Lector´",
-      imagen: "",
+      imagen: '../multimedia/ewok34.jpeg',
       precio: 600}, 
 
     { id:17,
       nombre: "Baby Yoda 18cm",
-      imagen: "",
+      imagen: '../multimedia/ewok36.jpeg',
       precio: 1250}, 
 
     { id:18,
       nombre: "Soporte para celulares Mujer Maravilla 22cm",
-      imagen: "",
+      imagen: '../multimedia/ewok 9.jpeg',
       precio: 1550}, 
 
     { id:19,
     nombre: "He Man Jumbo 30cm",
-    imagen: "",
+    imagen: '../multimedia/ewok38.jpeg',
     precio: 3000}, 
 
     { id:20,
       nombre: "Kit Card Star Wars y otros modelos",
-      imagen: "",
+      imagen: '../multimedia/ewok32.jpeg',
       precio: 690}, 
 
     { id:21,
       nombre: "Varitas mágicas Harry Potter con soporte (varios modelos)",
-      imagen: "",
+      imagen: '../multimedia/ewok15.jpeg',
       precio: 3500}, 
 
     
@@ -273,3 +273,11 @@ DOMbotonVaciar.addEventListener('click', vaciarCarrito);
 
 // Inicio
 renderizarProductos();
+
+//animaciones 
+
+
+
+//animación del titulo principal h1, al no aparecer el slide toggle hace la funcion de slide down
+$("h3").hide()
+        .slideToggle(1000);
